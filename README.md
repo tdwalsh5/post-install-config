@@ -26,7 +26,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 <h2>Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot1.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Now that osTicket is successfully installed and running, we can start system administration tasks. Starting with configuring new roles within the help desk. This will allow effective management of user access and permissions.
