@@ -34,7 +34,7 @@ Now that osTicket is successfully installed and running, we can start system adm
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 To configure new roles within osTicket for the helpdesk, go to the admin panel in the top right of the page, then click Agents -> Roles -> Add New Role. Enter the name of the new role, in my case I used "Supreme Admin". Now you can grant permissions to this role, since I created a Supreme Admin role, I granted the role to have access to all permissions. This allowed me to have full access to the tickets and any adjustments I wanted to make for learning purposes. 
@@ -43,7 +43,7 @@ Admin Panel -> Agents -> Roles
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot3" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 After configuring the roles desired, we will create departments. In the Agents tab, select Departments -> Add New Department. Create a new department called "SysAdmins" (short for System Administraters) and will serve as the designated department for System Administraters. We will be putting the "Supreme Admin" role into this department. Also make sure to have the Parent of this department be "Top Level Department". Additional settings, such as SLAs, managers, and email configurations, can be customized within the Departments tab to align with your help desk's operational needs. Make sure to click "Create Dept" after finishing configurations.
