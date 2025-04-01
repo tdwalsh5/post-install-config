@@ -29,80 +29,139 @@ This tutorial outlines the post-install configuration of the open-source help de
 <img src="post-install-shot1.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now that osTicket is successfully installed and running, we can start system administration tasks. Starting with configuring new roles within the help desk. This will allow effective management of user access and permissions.
+  Now that osTicket is successfully installed and running, we can begin performing system administration tasks.<br><br>
+
+  We'll start by configuring new roles within the help desk.  
+  This enables effective management of user access and permissions across the system.
 </p>
 <br />
 
 <p>
-<img src="post-install-shot2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot2.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To configure new roles within osTicket for the helpdesk, go to the admin panel in the top right of the page, then click Agents -> Roles -> Add New Role. Enter the name of the new role, in my case I used "Supreme Admin". Now you can grant permissions to this role, since I created a Supreme Admin role, I granted the role to have access to all permissions. This allowed me to have full access to the tickets and any adjustments I wanted to make for learning purposes. 
-Admin Panel -> Agents -> Roles
+  To configure new roles within osTicket for the help desk, navigate to:<br>
+  <strong>Admin Panel → Agents → Roles → Add New Role</strong><br><br>
+
+  Enter the name of the new role. In this case, I used <strong>"Supreme Admin"</strong>.<br><br>
+
+  You can now grant permissions to this role. Since I created a Supreme Admin role, I assigned it access to <strong>all available permissions</strong>.<br><br>
+
+  This allowed me full access to tickets and system settings — helpful for learning, testing, and administrative control.
 </p>
 <br />
 
 <p>
-<img src="post-install-shot3" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot3.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After configuring the roles desired, we will create departments. In the Agents tab, select Departments -> Add New Department. Create a new department called "SysAdmins" (short for System Administraters) and will serve as the designated department for System Administraters. We will be putting the "Supreme Admin" role into this department. Also make sure to have the Parent of this department be "Top Level Department". Additional settings, such as SLAs, managers, and email configurations, can be customized within the Departments tab to align with your help desk's operational needs. Make sure to click "Create Dept" after finishing configurations.
-Admin Panel -> Agents -> Departments
+  After configuring the desired roles, we will create departments.<br><br>
+
+  Navigate to:<br>
+  <strong>Agents → Departments → Add New Department</strong><br><br>
+
+  Create a new department called <strong>"SysAdmins"</strong>, which will serve as the designated department for system administrators.<br><br>
+
+  Assign the <strong>"Supreme Admin"</strong> role to this department.  
+  Make sure to set the <strong>Parent Department</strong> to <em>"Top Level Department"</em>.<br><br>
+
+  Additional settings such as SLAs, managers, and email configurations can be customized within the Departments tab to align with your help desk's operational needs.<br><br>
+
+  Don’t forget to click <strong>"Create Dept"</strong> after finishing the configurations.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot4.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now we will configure Teams. To do so navigate to Admin Panel -> Agents -> Teams. Creating teams allows us to group agents from different departments to collaborate effectively. Create a team named "Online Banking" and assign agents from different departments as needed.
-Admin Panel -> Agents -> Teams
+  Now we will configure teams. To do so, navigate to:<br>
+  <strong>Admin Panel → Agents → Teams</strong><br><br>
+
+  Creating teams allows you to group agents from different departments to collaborate more effectively.<br><br>
+
+  For this project, create a team named <strong>"Online Banking"</strong> and assign agents from different departments as needed.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot5.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In this simulated case, I wanted to allow anyone to create tickets. Navigate to Admin Panel -> Settings -> User Settings. Uncheck the box "Require registration and login to create tickets" allowing unregistered users to submit tickets without needing an account.
+  In this simulated case, I wanted to allow anyone to create tickets.<br><br>
+
+  Navigate to:<br>
+  <strong>Admin Panel → Settings → User Settings</strong><br><br>
+
+  Then, uncheck the box labeled:<br>
+  <em>"Require registration and login to create tickets"</em><br><br>
+
+  This allows unregistered users to submit tickets without needing an account.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot6.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To configure agents (workers), navigate to Admin Panel -> Agents -> Add New. Fill in the necessary details, in my project I created Jane and John Doe. I assigned Jane to the SysAdmins department and John to the Support Department. The support department was a default, and did not need to be created manually. I granted Jane all permissions. (Pics 6 & 7)
+<img src="post-install-shot7.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  To configure agents (workers), navigate to:<br>
+  <strong>Admin Panel → Agents → Add New</strong>.<br><br>
+
+  Fill in the necessary details for each agent.  
+  In my project, I created two agents: <strong>Jane Doe</strong> and <strong>John Doe</strong>.<br><br>
+
+  I assigned Jane to the <strong>SysAdmins</strong> department and John to the <strong>Support</strong> department.  
+  The Support department was a default and did not need to be created manually.<br><br>
+
+  I granted Jane all available permissions.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot8.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now to create users (customers), navigate to Agent Panel -> Users -> -> Add new. Add users, give them a name and email address, to enable them to submit and manage their tickets.
+  To create users (customers), navigate to:<br>
+  <strong>Agent Panel → Users → Add New Users</strong>.<br><br>
+
+  Add each user with their name and email address to enable them to submit and manage their own support tickets.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot9.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To configure SLA (Service Level Agreements) navigate to Admin Panel -> Manage -> SLA -> Add New. For the names use, Sev-A, Sev-B, and Sev-C, with Sev-A being the most sever and decreasing until Sev-C. 
-My SLA's:
-- Sev-A (Grace Period: 1 hour, Schedule: 24/7)
-- Sev-B (Grace Period: 4 hours, Schedule: 24/7)
-- Sev-C (Grace Period: 8 hours, Schedule: 24/5)
+  To configure SLA (Service Level Agreements), navigate to:<br>
+  <strong>Admin Panel → Manage → SLA → Add New</strong>.<br><br>
+
+  For the names, use <strong>Sev-A</strong>, <strong>Sev-B</strong>, and <strong>Sev-C</strong>, with Sev-A being the most severe and decreasing until Sev-C.
 </p>
+
+<p><strong>My SLAs:</strong></p>
+<ul>
+  <li>Sev-A (Grace Period: 1 hour, Schedule: 24/7)</li>
+  <li>Sev-B (Grace Period: 4 hours, Schedule: 24/7)</li>
+  <li>Sev-C (Grace Period: 8 hours, Schedule: 24/5)</li>
+</ul>
 <br />
 
 <p>
-image 10
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="post-install-shot10.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-To configure help topics for user ticket creation navigate to Admin Panel -> Manage -> Help Topics -> Add New Help Topic. These topics will be presented to users and help them categorize their tickets effectively. There is a permission that can be granted to support to recategorize tickets if done so incorrectly by the customer.
-Help topics I created:
-Image 11
+  To configure help topics for user ticket creation, navigate to:<br>
+  <strong>Admin Panel → Manage → Help Topics → Add New Help Topic</strong>.<br><br>
+
+  These topics will be presented to users to help them categorize their tickets effectively.  
+  Support staff can be granted permission to re-categorize tickets if the customer selects an incorrect topic.
+</p>
+
+<p><strong>Help topics I created:</strong></p>
+<p>
+<img src="post-install-shot11.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
